@@ -18,6 +18,7 @@
       <% end %>
 
       <strong>SupeRails.com</strong>
+      <%= Rails.application.credentials.dig(:tdcm) %>
       <% if user_signed_in? %>
         Are you admin? <%= current_user.has_role? :admin %>
         <%= current_user.roles.pluck(:name) %>
