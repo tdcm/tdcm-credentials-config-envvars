@@ -17,7 +17,7 @@
         <p>
       <% end %>
 
-      <strong>SupeRails.com</strong>
+      <strong><%= Rails.application.credentials.dig(Rails.env.to_sym, :app_name) %></strong>
       <%= Rails.application.credentials.dig(:tdcm) %>
       <% if user_signed_in? %>
         Are you admin? <%= current_user.has_role? :admin %>
