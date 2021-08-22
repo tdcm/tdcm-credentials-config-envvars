@@ -1,0 +1,14 @@
+shared:
+  foo:
+    bar:
+      baz: 1
+  job_types:
+    ruby: Ruby on Rails development
+    python: Python dev
+
+development:
+  foo:
+    bar:
+      qux: 2
+
+

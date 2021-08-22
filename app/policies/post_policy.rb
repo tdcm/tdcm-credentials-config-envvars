@@ -14,7 +14,8 @@ class PostPolicy < ApplicationPolicy
   end
 
   def new?
-    @user.has_role?(:admin)
+    true
+    # @user.has_role?(:admin)
   end
 
   def show?

@@ -16,7 +16,7 @@
         <%= content_tag :div, msg, class: name %>
         <p>
       <% end %>
-
+      <%= ENV['AMAZON_ACCESS_KEY'] %>
       <strong><%= Rails.application.credentials.dig(Rails.env.to_sym, :app_name) %></strong>
       <%= Rails.application.credentials.dig(:tdcm) %>
       <% if user_signed_in? %>
